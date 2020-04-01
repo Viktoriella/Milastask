@@ -1,0 +1,27 @@
+.main-nav__list {
+	@include reset-list();
+	min-width: 435px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-nav__link {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: inline-block;
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+
+	&[href]:hover {
+		opacity: 0.8;
+	}
+	&[href]:active {
+		opacity: 0.6;
+	}
+}
+
+.main-nav__link--active {
+	border-top: 1px dashed #ffffff;
+	padding-top: 4px;
+}

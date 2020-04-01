@@ -1,0 +1,32 @@
+.main-info {
+	padding-left: 375px;
+	padding-right: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-info__name {
+	@include reset();
+	margin-bottom: 40px;
+	font-family: "Rubik medium", sans-serif;
+	font-size: 60px;
+	font-weight: medium;
+}
+
+.main-info__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 530px;
+}
+
+.main-info__text {
+	@include reset();
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.main-info__button {
+	background-color: #ffffff;
+}

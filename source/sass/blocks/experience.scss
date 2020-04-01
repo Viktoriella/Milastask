@@ -1,0 +1,26 @@
+.experience {
+	padding: 55px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.experience__title {
+	@include reset();
+	margin-bottom: 25px;
+	color: #000000;
+	font-weight: medium;
+	font-size: 20px;
+}
+
+.experience__text {
+	@include reset();
+	margin-bottom: 20px;
+	line-height: 26px;
+}
+
+.experience__link {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	font-weight: medium;
+	font-size: 13px;
+}

@@ -1,0 +1,87 @@
+.partners {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff;
+	padding-left: 300px;
+	padding-right: 300px;
+	padding-top: 85px;
+	padding-bottom: 95px;
+}
+
+.partners__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include reset-list();
+	width: 1170px;
+}
+
+.partners__button {
+	position: relative;
+	font-size: 0;
+	height: 50px;
+	width: 20px;
+	background-color: #000000;
+	opacity: 0.7;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+		}
+
+	&:active {
+		opacity: 0.3;
+	}
+
+	&::before {
+		@include pseudo();
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 0;
+		height: 0;
+	}
+}
+
+.partners__button--previous::before {
+		border-right: 8px solid #ffffff;
+		border-left: none;
+		border-top: 11px solid transparent;
+		border-bottom: 11px solid transparent;	
+}
+
+.partners__button--next::before {
+		border-right: none;
+		border-left: 8px solid #ffffff;
+		border-top: 11px solid transparent;
+		border-bottom: 11px solid transparent;	
+}
+
+.partners__button--disabled {
+	cursor: default;
+	opacity: 0.2;
+
+	&:hover {
+		opacity: 0.2;
+		}
+
+	&:active {
+		opacity: 0.2;
+	}
+}
+
+.partners__link {
+	display: flex;
+	justify-content: center;
+
+	&:hover {
+		opacity: 0.7;
+		}
+
+	&:active {
+		opacity: 0.4;
+	}
+}
+

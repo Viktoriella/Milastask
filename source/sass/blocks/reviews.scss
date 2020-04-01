@@ -1,0 +1,28 @@
+.reviews {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 375px;
+	padding-right: 375px;
+	padding-top: 170px;
+	padding-bottom: 185px;
+	background-color: #020202;
+}
+
+.reviews__wrapper {
+	width: 400px;
+}
+
+.reviews__title {
+	@include reset();
+	margin-bottom: 30px;
+	font-family: "Rubik medium", sans-serif;
+	font-weight: medium;
+	font-size: 30px;
+}
+
+.reviews__text {
+	@include reset();
+	color: #949494;
+	line-height: 26px;
+}

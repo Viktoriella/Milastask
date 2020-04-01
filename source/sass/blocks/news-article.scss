@@ -1,0 +1,138 @@
+.news-article {
+	margin-bottom: 30px;
+	border: 10px solid #ffffff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+	&:hover {
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	}
+
+	&:hover .news-article__text-link {
+		color: #444444;
+	}
+
+	&:hover .news-article__author::before {
+		opacity: 0.7;
+	}
+
+	&:hover .news-article__author::before {
+		opacity: 0.7;
+	}
+
+	&:hover .news-article__author::before {
+		opacity: 0.7;
+	}
+
+	&:hover .news-article__time::before {
+		opacity: 0.7;
+	}
+
+	&:hover .news-article__date::before {
+		opacity: 0.7;
+	}
+}
+
+.news-article__link {
+	display: block;
+	text-decoration: none;
+}
+
+.news-article--big {
+	margin-right: 30px;
+	width: 455px;
+}
+
+.news-article--small {
+	width: 650px;
+	display: flex;
+}
+
+.news-article__image {
+	display: block;
+	@include reset();
+}
+
+.news-article__wrapper--big {
+	margin-top: 25px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.news-article__wrapper--small {
+	margin-top: 5px;
+	margin-left: 25px;
+	margin-right: 20px;
+}
+
+.news-article__header {
+	display: flex;
+	margin-bottom: 20px;
+	color: #858585;
+	font-size: 14px;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.news-article__author {
+	position: relative;
+	margin-right: 30px;
+	padding-left: 25px;
+	font-style: normal;
+
+	&::before {
+		@include pseudo();
+		@include sprite(-5px, -721px, 13px, 17px);
+		top: 50%;
+		transform: translateY(-50%);
+		opacity: 0.6;
+	}
+}
+
+.news-article__time {
+	position: relative;
+	margin-right: 30px;
+	padding-left: 25px;
+
+	&::before {
+		@include pseudo();
+		@include sprite(-5px, -429px, 18px, 17px)
+		top: 50%;
+		transform: translateY(-50%);
+		opacity: 0.6;
+	}
+}
+
+.news-article__date {
+	position: relative;
+	padding-left: 30px;
+	text-transform: uppercase;
+
+	&::before {
+		@include pseudo();
+		@include sprite(-5px, -402px, 17px, 17px);
+		top: 50%;
+		transform: translateY(-50%);
+		opacity: 0.6;
+	}
+}
+
+.news-article__title {
+	@include reset();
+	margin-bottom: 25px;
+	color: #444444;
+	font-family: "Rubik medium", sans-serif;
+	font-weight: medium;
+	font-size: 20px;
+}
+
+.news-article__text {
+	@include reset();
+	margin-bottom: 15px;
+	color: #7e7e7e;
+	line-height: 24px;
+	font-family: "Rubik light", sans-serif;
+	font-weight: light;
+}
+
+.news-article__text-link {
+	color: #757575;
+}

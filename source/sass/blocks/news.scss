@@ -1,0 +1,31 @@
+.news {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 375px;
+	padding-right: 375px;
+	padding-top: 130px;
+	padding-bottom: 125px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.news__title {
+	@include reset();
+	margin-bottom: 25px;
+	font-size: 40px;
+	font-family: "Rubik medium", sans-serif;
+	font-weight: medium;
+}
+
+.news__description {
+	width: 570px;
+	@include reset();
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.news__articles {
+	align-self: stretch;
+	display: flex;
+}

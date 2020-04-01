@@ -1,0 +1,52 @@
+@font-face {
+	font-family: "Rubik", sans-serif;
+	font-weight: regular;
+	src: "url(rubik-regular-webfont.woff2)",
+		"url(rubik-regular-webfont.woff)";
+}
+
+@font-face {
+	font-family: "Rubik medium", sans-serif;
+	font-weight: medium;
+	src: "url(rubik-medium-webfont.woff2)",
+		"url(rubik-medium-webfont.woff)";
+}
+
+@font-face {
+	font-family: "Rubik light", sans-serif;
+	font-weight: light;
+	src: "url(rubik-light-webfont.woff2)",
+		"url(rubik-light-webfont.woff)";
+}
+
+@font-face {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: regular;
+	src: "url(sourcesanspro-regular-webfont.woff2)",
+		"url(sourcesanspro-regular-webfont.woff)";
+}
+
+@font-face {
+	font-family: "Poppins medium", sans-serif;
+	font-weight: medium;
+	src: "url(poppins-medium-webfont.woff2)",
+		"url(poppins-medium-webfont.woff)";
+}
+
+@font-face {
+	font-family: "Myriad Pro", sans-serif;
+	font-weight: regular;
+	src: "url(MyriadPro-Regular.woff2)",
+		"url(MyriadPro-Regular.woff)";
+}
+
+body {
+	margin: 0 auto;
+	width: 1920px;
+	color: #ffffff;
+	background-color: #000000;
+	font-family: "Rubik", sans-serif;
+	font-weight: regular;
+	font-size: 16px;
+	line-height: 28px;
+}

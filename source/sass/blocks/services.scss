@@ -1,0 +1,30 @@
+.services {
+	padding-top: 95px;
+	padding-left: 375px;
+	padding-right: 375px;
+	padding-bottom: 130px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.services__title {
+	@include reset();
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-family: "Rubik medium", sans-serif;
+	font-weight: medium;
+	text-align: center;
+}
+
+.services__description {
+	width: 440px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.services__list {
+	display: flex;
+	flex-wrap: wrap;
+	@include reset-list();
+}

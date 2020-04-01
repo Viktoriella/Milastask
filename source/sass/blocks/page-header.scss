@@ -1,0 +1,12 @@
+.page-header {
+	padding-left: 375px;
+	padding-right: 375px;
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-header__title {
+	@include reset();
+	font-size: 0;
+}

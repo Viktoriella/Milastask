@@ -1,0 +1,81 @@
+.skills {
+	padding-top: 45px;
+	padding-left: 45px;
+	padding-right: 55px;
+	padding-bottom: 50px;
+	width: 400px;
+	color: #000000;
+	background-color: #ffffff;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.skills__title {
+	@include reset();
+	margin-bottom: 25px;
+	font-size: 24px;
+	font-family: "Rubik medium", sans-serif;
+	font-weight: medium;
+}
+
+.skills__table {
+	font-family: "Rubik medium", sans-serif;
+	font-weight: medium;
+	width: 100%;
+}
+
+.skills__table tbody {
+	display: flex;
+	flex-direction: column;	
+}
+
+.skills__item {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&::after {
+		z-index: 1;
+		@include pseudo();
+		top: auto;
+		bottom: 0;
+		height: 10px;
+		width: 100%;
+		background-color: #f7f7f7;
+		border-radius: 10px;
+	}
+
+	&::before {
+		z-index: 2;
+		@include pseudo();
+		top: auto;
+		bottom: 0;
+		height: 10px;
+		width: 320px;
+		background-color: #afafaf;
+		border-radius: 10px;
+	}
+}
+
+.skills__item--css::before {
+	width: 340px;
+}
+
+.skills__item--js::before {
+	width: 380px;
+}
+
+.skills__item--design::before {
+	width: 360px;
+}
+
+.skills__percentage {
+	padding: 5px;
+	background-color: #f7f7f7;
+	border-radius: 50%;
+}

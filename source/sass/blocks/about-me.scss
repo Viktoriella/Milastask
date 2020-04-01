@@ -1,0 +1,25 @@
+.about-me {
+	width: 600px;
+	padding-top: 70px;
+}
+
+.about-me__title {
+	@include reset();
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 40px;
+	font-family: "Rubik medium", sans-serif;
+	font-weight: medium;
+}
+
+.about-me__text {
+	@include reset();
+	margin-bottom: 25px;
+	line-height: 26px;
+}
+
+.about-me__button {
+	margin-top: 10px;
+	background-color: #000000;
+	color: #ffffff;
+}

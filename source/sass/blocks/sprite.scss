@@ -1,0 +1,78 @@
+@mixin sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite {
+    // background-image: url("../img/sprite.png");
+    // background-repeat: no-repeat;
+    // display: block;
+
+    &.sprite-bg-cross {
+        .stitches-sprite(-5px, -5px, 28px, 28px);
+    }
+
+    &.sprite-bg-half-ellipse {
+        .stitches-sprite(-5px, -43px, 77px, 188px);
+    }
+
+    &.sprite-bg-triangle {
+        .stitches-sprite(-5px, -241px, 88px, 87px);
+    }
+
+    &.sprite-icon-arrow-right {
+        .stitches-sprite(-5px, -338px, 15px, 11px);
+    }
+
+    &.sprite-icon-arrow-right-black {
+        .stitches-sprite(-5px, -359px, 15px, 11px);
+    }
+
+    &.sprite-icon-be {
+        .stitches-sprite(-5px, -380px, 20px, 12px);
+    }
+
+    &.sprite-icon-calendar {
+        .stitches-sprite(-5px, -402px, 17px, 17px);
+    }
+
+    &.sprite-icon-clock {
+        .stitches-sprite(-5px, -429px, 18px, 17px);
+    }
+
+    &.sprite-icon-comp-black {
+        .stitches-sprite(-5px, -456px, 41px, 35px);
+    }
+
+    &.sprite-icon-comp-white {
+        .stitches-sprite(-5px, -501px, 41px, 35px);
+    }
+
+    &.sprite-icon-dr {
+        .stitches-sprite(-5px, -546px, 20px, 19px);
+    }
+
+    &.sprite-icon-fb {
+        .stitches-sprite(-5px, -575px, 13px, 24px);
+    }
+
+    &.sprite-icon-glasses {
+        .stitches-sprite(-5px, -609px, 72px, 42px);
+    }
+
+    &.sprite-icon-pr {
+        .stitches-sprite(-5px, -661px, 20px, 25px);
+    }
+
+    &.sprite-icon-tt {
+        .stitches-sprite(-5px, -696px, 20px, 15px);
+    }
+
+    &.sprite-icon-user {
+        .stitches-sprite(-5px, -721px, 13px, 17px);
+    }
+}
