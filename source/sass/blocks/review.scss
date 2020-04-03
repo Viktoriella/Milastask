@@ -14,12 +14,6 @@
 .reviews__controls {
 	@include reset-list();
 	position: relative;
-	// bottom: -20px;
-	// left: 50%;
-	// transform: translateX(-50%);
-	// width: 90px;
-	// display: flex;
-	// justify-content: space-between;
 }
 
 .reviews__input {
@@ -93,19 +87,19 @@
 }
 
 .reviews__input--second:checked ~ .review__container--second {
-	transition: 1.5s;
+	transition: 1s;
 	opacity: 1;
 	z-index: 1;
 }
 
 .reviews__input--first:checked ~ .review__container--first {
-	transition: 1.5s;
+	transition: 1s;
 	opacity: 1;
 	z-index: 1;
 }
 
 .reviews__input--third:checked ~ .review__container--third {
-	transition: 1.5s;
+	transition: 1s;
 	opacity: 1;
 	z-index: 1;
 }

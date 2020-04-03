@@ -1,4 +1,5 @@
 .news {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8,6 +9,22 @@
 	padding-bottom: 125px;
 	background-color: #ffffff;
 	color: #000000;
+
+	&::before {
+		@include pseudo();
+		@include sprite(-5px, -241px, 88px, 87px);
+		top: auto;
+		bottom: 200px;
+		left: 100px;
+	}
+
+	&::after {
+		@include pseudo();
+		@include sprite(-5px, -5px, 28px, 28px);
+		top: 170px;
+		left: auto;
+		right: 130px;
+	}
 }
 
 .news__title {

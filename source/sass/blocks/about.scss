@@ -1,4 +1,5 @@
 .about {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	padding-left: 375px;
@@ -7,4 +8,26 @@
 	padding-bottom: 105px;
 	color: #000000;
 	background-image: linear-gradient(to right, #000000 0% , #000000 660px, #ffffff 660px, #ffffff 100%);
+
+	&::before {
+		@include pseudo();
+		left: auto;
+		right: 820px;
+		width: 23px;
+		height: 23px;
+		background-color: #e5e8ec;
+		border-radius: 50%;
+	}
+
+	&::after {
+		@include pseudo();
+		width: 58px;
+		height: 58px;
+		border: 17px solid #e9e9e9;
+		border-radius: 50%;
+		top: auto;
+		bottom: 20px;
+		right: 670px;
+		left: auto;
+	}
 }

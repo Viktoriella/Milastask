@@ -43,7 +43,7 @@
 }
 
 .news-article--small {
-	width: 650px;
+	width: 670px;
 	display: flex;
 }
 
@@ -61,12 +61,11 @@
 .news-article__wrapper--small {
 	margin-top: 5px;
 	margin-left: 25px;
-	margin-right: 20px;
 }
 
 .news-article__header {
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	color: #858585;
 	font-size: 14px;
 	font-family: "Source Sans Pro", sans-serif;
@@ -117,7 +116,7 @@
 
 .news-article__title {
 	@include reset();
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	color: #444444;
 	font-family: "Rubik medium", sans-serif;
 	font-weight: medium;

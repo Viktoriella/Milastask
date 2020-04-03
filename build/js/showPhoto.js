@@ -1,11 +1,21 @@
-var PHOTOS = {
-	'http://localhost:3000/img/work_1.jpg': 'http://localhost:3000/img/work_1-big.jpg',
-	'http://localhost:3000/img/work_2.jpg': 'http://localhost:3000/img/work_2-big.jpg',
-	'http://localhost:3000/img/work_3.jpg': 'http://localhost:3000/img/work_3-big.jpg',
-	'http://localhost:3000/img/work_4.jpg': 'http://localhost:3000/img/work_4-big.jpg',
-	'http://localhost:3000/img/work_5.jpg': 'http://localhost:3000/img/work_5-big.jpg'
+if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+	var PHOTOS = {
+		'http://localhost:3000/img/work_1.jpg': 'http://localhost:3000/img/work_1-big.jpg',
+		'http://localhost:3000/img/work_2.jpg': 'http://localhost:3000/img/work_2-big.jpg',
+		'http://localhost:3000/img/work_3.jpg': 'http://localhost:3000/img/work_3-big.jpg',
+		'http://localhost:3000/img/work_4.jpg': 'http://localhost:3000/img/work_4-big.jpg',
+		'http://localhost:3000/img/work_5.jpg': 'http://localhost:3000/img/work_5-big.jpg'
+	};
+} else {
+	var PHOTOS = {
+		'file:///C:/Users/vikto/project/Milastask/build/img/work_1.jpg': 'file:///C:/Users/vikto/project/Milastask/build/img/work_1-big.jpg',
+		'file:///C:/Users/vikto/project/Milastask/build/img/work_2.jpg': 'file:///C:/Users/vikto/project/Milastask/build/img/work_2-big.jpg',
+		'file:///C:/Users/vikto/project/Milastask/build/img/work_3.jpg': 'file:///C:/Users/vikto/project/Milastask/build/img/work_3-big.jpg',
+		'file:///C:/Users/vikto/project/Milastask/build/img/work_4.jpg': 'file:///C:/Users/vikto/project/Milastask/build/img/work_4-big.jpg',
+		'file:///C:/Users/vikto/project/Milastask/build/img/work_5.jpg': 'file:///C:/Users/vikto/project/Milastask/build/img/work_5-big.jpg'
+	};
 };
-
+    
 var makeBigPhotos = function(obj) {
 	var arr = [];
 	for (var prop in obj) {
