@@ -9,7 +9,7 @@ var autoprefixer = require("autoprefixer");
 
 gulp.task("copy", function () {
   return gulp.src([
-    // "source/fonts/**/*.{woff,woff2}",
+    "source/*.html",
     "source/img/**",
     "source/js/**"
   ], {
