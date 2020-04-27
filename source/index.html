@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<link rel="preload" href="css/style.min.css" as="style">
+	<link rel="preload" href="fonts/rubik-regular-webfont.woff2" as="font">
 	<meta charset="UTF-8">
 	<meta name="description" content="Сайт-портфолио веб-разработчика Jack Barboza">
     <meta name="keywords" content="Веб-разработка, фронтенд-разрабоотчик, веб-дизайн, сайт с нуля">
 	<title>Milastask</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/modernizr-custom.min.js"></script>
 </head>
 <body>
 	<header class="page-header">
 		<h1 class="page-header__title">
 			<a class="page-header__logo logo">
 				Milastask
-				<img class="logo__image" src="img/logo.png" alt="Milastask">
+				<picture>
+					<source srcset="img/logo.webp" type="image/webp">
+					<img class="logo__image" src="img/logo.png" alt="Milastask">
+				</picture>
 			</a>
 		</h1>
 		<nav class="page-header__main-nav main-nav">
@@ -50,7 +56,10 @@
 					<button class="button main-info__button" type="button">Download</button>
 				</p>
 			</div>
-			<img class="main-info__image" src="img/portrait.jpg" alt="Jack Barboza">
+			<picture>
+				<source srcset="img/portrait.webp" type="image/webp">
+				<img class="main-info__image" src="img/portrait.jpg" alt="Jack Barboza">
+			</picture>
 			<ul class="main-info__socials socials">
 				<li class="socials__item">
 					<a class="socials__link socials__link--fb" href="#">Facebook</a>
@@ -216,19 +225,34 @@
 			</ul>
 			<div class="portfolio__images">
 				<figure class="portfolio__figure">
-					<img class="portfolio__image portfolio__image--work_1" src="img/work_1.jpg" width="470" alt="Пример работы">
+					<picture>
+						<source srcset="img/work_1.webp" type="image/webp">
+						<img class="portfolio__image portfolio__image--work_1" src="img/work_1.jpg" width="470" alt="Пример работы">
+					</picture>
 				</figure>
 				<figure class="portfolio__figure">
-					<img class="portfolio__image portfolio__image--work_2 " src="img/work_2.jpg" width="370" alt="Пример работы">
+					<picture>
+						<source srcset="img/work_2.webp" type="image/webp">
+						<img class="portfolio__image portfolio__image--work_2 " src="img/work_2.jpg" width="370" alt="Пример работы">
+					</picture>
 				</figure>
 				<figure class="portfolio__figure">
-					<img class="portfolio__image portfolio__image--work_3" src="img/work_3.jpg" width="270" alt="Пример работы">
+					<picture>
+						<source srcset="img/work_3.webp" type="image/webp">
+						<img class="portfolio__image portfolio__image--work_3" src="img/work_3.jpg" width="270" alt="Пример работы">
+					</picture>
 				</figure>
 				<figure class="portfolio__figure">
-					<img class="portfolio__image portfolio__image--work_4" src="img/work_4.jpg" width="670" alt="Пример работы">
+					<picture>
+						<source srcset="img/work_4.webp" type="image/webp">
+						<img class="portfolio__image portfolio__image--work_4" src="img/work_4.jpg" width="670" alt="Пример работы">
+					</picture>
 				</figure>
 				<figure class="portfolio__figure">
-					<img class="portfolio__image portfolio__image--work_5" src="img/work_5.jpg" width="470" alt="Пример работы">
+					<picture>
+						<source srcset="img/work_5.webp" type="image/webp">
+						<img class="portfolio__image portfolio__image--work_5" src="img/work_5.jpg" width="470" alt="Пример работы">
+					</picture>
 				</figure>
 			</div>
 		</section>
@@ -241,7 +265,10 @@
 			<div class="news__articles">
 				<article class="news-article news-article--big">
 					<a class="news-article__link" href="#">
-						<img class="news-article__image" src="img/news_1.jpg" alt="Первая новость" width="455" height="298">
+						<picture>
+							<source srcset="img/news_1.webp" type="image/webp">
+							<img class="news-article__image" src="img/news_1.jpg" alt="Первая новость" width="455" height="298">
+						</picture>
 						<div class="news-article__wrapper news-article__wrapper--big">
 							<header class="news-article__header">
 								<cite class="news-article__author">Oruna</cite>
@@ -260,7 +287,10 @@
 				<div class="news__articles-container">
 					<article class="news-article">
 						<a class="news-article__link news-article--small" href="#">
-							<img class="news-article__image" src="img/news_2.jpg" alt="Вторая новость" width="263" height="254">
+							<picture>
+								<source srcset="img/news_2.webp" type="image/webp">
+								<img class="news-article__image" src="img/news_2.jpg" alt="Вторая новость" width="263" height="254">
+							</picture>
 							<div class="news-article__wrapper news-article__wrapper--small">
 								<header class="news-article__header">
 									<cite class="news-article__author">Mithila</cite>
@@ -278,7 +308,10 @@
 					
 					<article class="news-article">
 						<a class="news-article__link news-article--small" href="#">
-							<img class="news-article__image" src="img/news_3.jpg" alt="Третья новость" width="263" height="254">
+							<picture>
+								<source srcset="img/news_3.webp" type="image/webp">
+								<img class="news-article__image" src="img/news_3.jpg" alt="Третья новость" width="263" height="254">
+							</picture>
 							<div class="news-article__wrapper news-article__wrapper--small">
 								<header class="news-article__header">
 									<cite class="news-article__author">Robocop</cite>
@@ -333,7 +366,10 @@
 									<b class="review__author-name">Hira Doe</b><br>
 									Web Developer
 								</cite>
-								<img src="img/review_author.jpg" alt="Hira Doe, Web Developer">
+								<picture>
+									<source srcset="img/review_author.webp" type="image/webp">
+									<img src="img/review_author.jpg" alt="Hira Doe, Web Developer">
+								</picture>
 							</div>
 						</div>
 					</li>
@@ -359,16 +395,36 @@
 			<button class="partners__button partners__button--previous" type="button">Previous</button>
 			<ul class="partners__list">
 				<li class="partners__item">
-					<a class="partners__link" href="#"><img src="img/codecanyon-logo.png" alt="Codecanyon"></a>
+					<a class="partners__link" href="#">
+						<picture>
+							<source srcset="img/codecanyon-logo.webp" type="image/webp">
+							<img src="img/codecanyon-logo.png" alt="Codecanyon">
+						</picture>
+					</a>
 				</li>
 				<li class="partners__item">
-					<a class="partners__link" href="#"><img src="img/themeforest-logo.png" alt="Themeforest"></a>
+					<a class="partners__link" href="#">
+						<picture>
+							<source srcset="img/themeforest-logo.webp" type="image/webp">
+							<img src="img/themeforest-logo.png" alt="Themeforest">
+						</picture>
+					</a>
 				</li>
 				<li class="partners__item">
-					<a class="partners__link" href="#"><img src="img/docean-logo.png" alt="3docean"></a>
+					<a class="partners__link" href="#">
+						<picture>
+							<source srcset="img/docean-logo.webp" type="image/webp">
+							<img src="img/docean-logo.png" alt="3docean">
+						</picture>
+					</a>
 				</li>
 				<li class="partners__item">
-					<a class="partners__link" href="#"><img src="img/photodune-logo.png" alt="Photodune"></a>
+					<a class="partners__link" href="#">
+						<picture>
+							<source srcset="img/photodune-logo.webp" type="image/webp">
+							<img src="img/photodune-logo.png" alt="Photodune">
+						</picture>
+					</a>
 				</li>
 			</ul>
 			<button disabled class="partners__button partners__button--next partners__button--disabled" type="button">Next</button>
@@ -411,6 +467,6 @@
 			<img class="show-image-popup__image" src="">
 		</div>
 		<div class="show-image-popup__overlay"></div>
-	<script src="js/showPhoto.js"></script>
+	<script src="js/showPhoto.min.js"></script>
 </body>
 </html>

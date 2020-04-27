@@ -53,3 +53,24 @@
 .socials__link--pin::before {
 	@include sprite(-5px, -661px, 20px, 25px);
 }
+
+.no-webp .socials__link--fb::before,
+.no-js .socials__link--fb::before,
+.no-webp .socials__link--tw::before,
+.no-js .socials__link--tw::before,
+.no-webp .socials__link--dr::before,
+.no-js .socials__link--dr::before,
+.no-webp .socials__link--bh::before,
+.no-js .socials__link--bh::before,
+.no-webp .socials__link--pin::before,
+.no-js .socials__link--pin::before {
+	background-image: url("../img/sprite.png");
+}
+
+.webp .socials__link--fb::before,
+.webp .socials__link--tw::before,
+.webp .socials__link--dr::before,
+.webp .socials__link--bh::before,
+.webp .socials__link--pin::before {
+	background-image: url("../img/sprite.webp");
+}

@@ -27,6 +27,18 @@
 	}
 }
 
+.no-webp .news::before,
+.no-js .news::before,
+.no-webp .news::after,
+.no-js .news::after {
+	background-image: url("../img/sprite.png");
+}
+
+.webp .news::before,
+.webp .news::after {
+	background-image: url("../img/sprite.webp");
+}
+
 .news__title {
 	@include reset();
 	margin-bottom: 25px;

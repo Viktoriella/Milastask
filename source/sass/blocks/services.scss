@@ -16,6 +16,15 @@
 	}
 }
 
+.no-webp .services::after,
+.no-js .services::after {
+	background-image: url("../img/sprite.png");
+}
+
+.webp .services::after {
+	background-image: url("../img/sprite.webp");
+}
+
 .services__title {
 	@include reset();
 	margin-bottom: 20px;

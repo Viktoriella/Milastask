@@ -88,3 +88,12 @@
 	transform: translate(-50%, -50%);
 	@include sprite(-5px, -609px, 72px, 42px);
 }
+
+.no-webp .portfolio__figure:hover::after,
+.no-js .portfolio__figure:hover::after {
+	background-image: url("../img/sprite.png");
+}
+
+.webp .portfolio__figure:hover::after {
+	background-image: url("../img/sprite.webp");
+}
